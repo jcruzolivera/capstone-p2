@@ -1,0 +1,249 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #0c359e, #0c359e, #0d3bad);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ruda-font {
+  font-family: "Ruda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.title {
+  color: #ffe3ca;
+}
+
+.subtitle {
+  color: #f6f5f5;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-bg {
+  background-color: #02084b;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 4fr;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #f6f5f5;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-flex {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.title-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#laptop-img {
+  margin: 3rem 0;
+}
+
+.am-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+#am-title {
+  grid-column: span 3;
+}
+
+#am-connection {
+  margin-top: 4em;
+  grid-row: span 2;
+}
+
+.am-connection-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.am-connection-flex-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-text {
+  margin-left: 1rem;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.light-color {
+  color: #f6f5f5;
+}
+.introduction-text {
+  text-align: justify;
+}
+.introduction {
+  grid-column: span 2;
+}
+li {
+  padding: 0.2rem;
+}
+
+.cm-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+  background-color: #f6f5f5;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  border: 0px;
+}
+#mail-cm {
+  color: #0c359e;
+  font-size: 1rem;
+}
+.left-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.green-color {
+    color: #6ac558;
+  }
+
+.blue-color {
+    color: #58acc5;
+  }
+
+/* RESPONSIVE  */
+
+@media (max-width: 576px) {
+  .top-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .title-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .am-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .am-container > .grid-item {
+    grid-column: span 4;
+  }
+  .cm-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cm-container > .grid-item {
+    grid-column: span 4;
+  }
+  
+  #contact-me-img {
+    height: 150px;
+  }
+
+  .am-connection-flex {
+    margin-bottom:1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .linea-blanca {
+    width: 170px;
+  }
+  #code-img{
+    height: 22px;
+  }
+  .connection-img {
+    margin-bottom: 15px!important;
+  }
+  .img-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #am-connection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .btn-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width:1080px){
+  #contact-me-img {
+    height: 140px;
+  }
+}
